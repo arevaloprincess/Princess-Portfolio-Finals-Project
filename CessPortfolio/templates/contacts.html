@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrincessPortfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+
+<body id="background"style="background-image:url('{% static 'bg.png'%}');">
+
+<body>
+    <div class="hero">
+       <nav>
+           <a class="logo">CONTACT INFORMATION</a>
+           <ul>
+            <li><a href="{% url 'home'%}">HOME</a></li>
+            <li><a href="{% url 'about'%}">ABOUT</a></li>
+            <li><a href="{% url 'portfolio'%}">PORTFOLIO</a></li>
+            <li><a href="{% url 'contacts'%}">CONTACTS</a></li>
+           </ul>
+        </nav>
+        <section class="contacts">
+            <div class="content">
+                <h2>Contact Us</h2>
+                
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Blk 1 Lot 4 Hillsview Homes Nia Rd. Putatan Muntinlupa City</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>09922915495</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>arevaloprincessgien@gmail.com</p>
+                        </div>
+                    </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+        </div>
+        <div class="inputBox">
+            <textarea required="required"></textarea>
+            <span>Type your Message...</span>
+</div>
+          <div class="inputBox">
+             <input type="text" name="" required="required">
+                <span>Full Name</span>
+              </div>
+          </section>
+    </div>
+</body>
+</html>

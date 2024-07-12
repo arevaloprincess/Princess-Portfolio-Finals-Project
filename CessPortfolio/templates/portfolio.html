@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrincessPortfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+
+<body id="background"style="background-image:url('{% static 'bg.png'%}');">
+
+<body>
+    <div class="hero">
+       <nav>
+        <a class="logo">PORTFOLIO/ACHIEVEMENTS</a>
+           <ul>
+            <li><a href="{% url 'home'%}">HOME</a></li>
+            <li><a href="{% url 'about'%}">ABOUT</a></li>
+            <li><a href="{% url 'portfolio'%}">PORTFOLIO</a></li>
+            <li><a href="{% url 'contacts'%}">CONTACTS</a></li>
+           </ul>
+        </nav>
+      
+        <div id="card-area">
+            <div class="wrapper">
+                <div class="box-arena">
+                    <div class="box">
+                        <img src="{% static '1.jpeg'%}">
+                        <div class="overlay">
+                            <h3>Pictures</h3>
+                            <p> Some pics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card-area">
+            <div class="wrapper">
+                <div class="box-arena">
+                    <div class="box">
+                        <img src="{% static '2.jpeg'%}">
+                        <div class="overlay">
+                            <h3>Achievements</h3>
+                            <p> Intramurals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card-area">
+            <div class="wrapper">
+                <div class="box-arena">
+                    <div class="box">
+                        <img src="{% static '3.jpeg'%}">
+                        <div class="overlay">
+                            <h3>Pictures</h3>
+                            <p> Some pics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in a Bubble</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+
+<body id="background"style="background-image:url('{% static 'bg.png'%}');">
+
+<body>
+    <div class="hero">
+       <nav>
+           <a class="logo"></a>
+           <ul>
+               <li><a href="{% url 'home'%}">HOME</a></li>
+               <li><a href="{% url 'about'%}">ABOUT</a></li>
+               <li><a href="{% url 'portfolio'%}">PORTFOLIO</a></li>
+               <li><a href="{% url 'contacts'%}">CONTACTS</a></li>
+           </ul>
+        </nav>
+        <div class="content">
+            <h1>Life in a Bubble</h1>
+            <a href="{% url 'about'%}">Explore</a>
+        </div>
+    </div>
+
+</body>
+</html>

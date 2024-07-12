@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrincessPortfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+
+<body id="background"style="background-image:url('{% static 'bg.png'%}');">
+
+<body>
+    <div class="hero">
+       <nav>
+        <a class="logo">ABOUT PRINCESS</a>
+           <ul>
+            <li><a href="{% url 'home'%}">HOME</a></li>
+            <li><a href="{% url 'about'%}">ABOUT</a></li>
+            <li><a href="{% url 'portfolio'%}">PORTFOLIO</a></li>
+            <li><a href="{% url 'contacts'%}">CONTACTS</a></li>
+           </ul>
+        </nav>
+
+        <section class="heor">
+            <div class="heading">
+                <h1>About Me</h1>
+            </div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome To My Website</h2>
+                <p>Discover my Volleyball Journey</p>
+                <a href="{% url 'portfolio'%}" class="button">Portfolio</a>
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'pic.jpeg'%}">
+            </div>
+        </div>
+    </section>
+
+    </div>
+</body>
+</html>
